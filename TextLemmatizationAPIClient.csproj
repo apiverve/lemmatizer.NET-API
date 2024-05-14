@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>APIVerve.API.TextLemmatization</Title>
+    <Version>1.0.0</Version>
+    <Authors>APIVerve</Authors>
+    <Company>APIVerve</Company>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackageProjectUrl>https://apiverve.com/marketplace/api/lemmatizer</PackageProjectUrl>
+    <SignAssembly>False</SignAssembly>
+    <Description>Lemmatizer is a simple tool for lemmatizing text. It returns the lemmatized text.</Description>
+    <RepositoryUrl>https://github.com/apiverve/lemmatizer-NET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>lemmatizer; lemmatizer api; lemmatizer tool; lemmatizer software; lemmatizer service; lemmatizer library; lemmatizer sdk; lemmatizer code; lemmatizer script; lemmatizer program; lemmatizer application; lemmatizer app; lemmatizer utility; lemmatizer helper; lemmatizer helper tool; lemmatizer helper software; lemmatizer helper service; lemmatizer helper library; lemmatizer helper sdk; lemmatizer helper code; lemmatizer helper script; lemmatizer helper program; lemmatizer helper application; lemmatizer helper app; lemmatizer helper utility; lemmatizer helper</PackageTags>
+    <Copyright>©2024 APIVerve. All Rights Reserved</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
