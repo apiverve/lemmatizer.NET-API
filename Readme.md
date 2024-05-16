@@ -70,8 +70,8 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```
-var queryOptions = new lemmatizerQueryOptions{
-  text: "The quick brown foxes jumped over the lazy dogs and other foxes"
+var queryOptions = new lemmatizerQueryOptions {
+  text = "The quick brown foxes jumped over the lazy dogs and other foxes"
 };
 ```
 
