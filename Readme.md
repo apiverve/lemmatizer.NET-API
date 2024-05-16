@@ -71,7 +71,7 @@ Using the API client, you can perform requests to the API.
 
 ```
 var queryOptions = new lemmatizerQueryOptions{
-  "text": "The quick brown foxes jumped over the lazy dogs and other foxes"
+  text: "The quick brown foxes jumped over the lazy dogs and other foxes"
 };
 ```
 
@@ -82,7 +82,7 @@ var response = apiClient.Execute(queryOptions);
 if(response.error != null) {
 	Console.WriteLine(response.error);
 } else {
-    var jsonResponse = JsonConvert.SerializeObject(response.data, Newtonsoft.Json.Formatting.Indented);
+    var jsonResponse = JsonConvert.SerializeObject(response, Newtonsoft.Json.Formatting.Indented);
     Console.WriteLine(jsonResponse);
 }
 ```
