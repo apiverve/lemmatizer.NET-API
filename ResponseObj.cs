@@ -6,32 +6,14 @@ namespace APIVerve
 {
 public class lemmas
 {
-    [JsonProperty("quick")]
-    public int quick { get; set; }
+    [JsonProperty("cat")]
+    public int cat { get; set; }
 
-    [JsonProperty("brown")]
-    public int brown { get; set; }
+    [JsonProperty("ran")]
+    public int ran { get; set; }
 
-    [JsonProperty("fox")]
-    public int fox { get; set; }
-
-    [JsonProperty("jump")]
-    public int jump { get; set; }
-
-    [JsonProperty("over")]
-    public int over { get; set; }
-
-    [JsonProperty("lazi")]
-    public int lazi { get; set; }
-
-    [JsonProperty("dog")]
-    public int dog { get; set; }
-
-    [JsonProperty("and")]
-    public int and { get; set; }
-
-    [JsonProperty("other")]
-    public int other { get; set; }
+    [JsonProperty("door")]
+    public int door { get; set; }
 
 }
 
