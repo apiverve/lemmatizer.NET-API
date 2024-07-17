@@ -1,4 +1,4 @@
-Text Lemmatization API
+Text Lemmatizer API
 ============
 
 Lemmatizer is a simple tool for lemmatizing text. It returns the lemmatized text.
@@ -7,7 +7,7 @@ Lemmatizer is a simple tool for lemmatizing text. It returns the lemmatized text
 ![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
 ![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a .NET Wrapper for the [Text Lemmatization API](https://apiverve.com/marketplace/api/lemmatizer)
+This is a .NET Wrapper for the [Text Lemmatizer API](https://apiverve.com/marketplace/api/lemmatizer)
 
 ---
 
@@ -15,17 +15,17 @@ This is a .NET Wrapper for the [Text Lemmatization API](https://apiverve.com/mar
 
 Using the .NET CLI:
 ```
-dotnet add package APIVerve.API.TextLemmatization
+dotnet add package APIVerve.API.TextLemmatizer
 ```
 
 Using the Package Manager:
 ```
-nuget install APIVerve.API.TextLemmatization
+nuget install APIVerve.API.TextLemmatizer
 ```
 
 Using the Package Manager Console:
 ```
-Install-Package APIVerve.API.TextLemmatization
+Install-Package APIVerve.API.TextLemmatizer
 ```
 
 From within Visual Studio:
@@ -33,8 +33,8 @@ From within Visual Studio:
 1. Open the Solution Explorer.
 2. Right-click on a project within your solution.
 3. Click on Manage NuGet Packages...
-4. Click on the Browse tab and search for "APIVerve.API.TextLemmatization".
-5. Click on the APIVerve.API.TextLemmatization package, select the appropriate version in the right-tab and click Install.
+4. Click on the Browse tab and search for "APIVerve.API.TextLemmatizer".
+5. Click on the APIVerve.API.TextLemmatizer package, select the appropriate version in the right-tab and click Install.
 
 
 ---
@@ -48,17 +48,17 @@ You can get it by signing up at [https://apiverve.com](https://apiverve.com)
 
 ## Usage
 
-The Text Lemmatization API documentation is found here: [https://docs.apiverve.com/api/lemmatizer](https://docs.apiverve.com/api/lemmatizer).  
+The Text Lemmatizer API documentation is found here: [https://docs.apiverve.com/api/lemmatizer](https://docs.apiverve.com/api/lemmatizer).  
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
 
 ###### Authentication
-Text Lemmatization API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
+Text Lemmatizer API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
 
 ```
 // Create an instance of the API client
-var apiClient = new TextLemmatizationAPIClient("[YOUR_API_KEY]", true);
+var apiClient = new TextLemmatizerAPIClient("[YOUR_API_KEY]", true);
 ```
 
 ---
@@ -71,7 +71,7 @@ Using the API client, you can perform requests to the API.
 
 ```
 var queryOptions = new lemmatizerQueryOptions {
-  text = "The quick brown foxes jumped over the lazy dogs and other foxes"
+  text = "The cats ran from door to door"
 };
 ```
 
@@ -94,17 +94,11 @@ if(response.error != null) {
   "status": "ok",
   "error": null,
   "data": {
-    "found": 9,
+    "found": 3,
     "lemmas": {
-      "quick": 1,
-      "brown": 1,
-      "fox": 2,
-      "jump": 1,
-      "over": 1,
-      "lazi": 1,
-      "dog": 1,
-      "and": 1,
-      "other": 1
+      "cat": 1,
+      "ran": 1,
+      "door": 2
     }
   }
 }
