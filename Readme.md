@@ -70,7 +70,7 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```
-var queryOptions = new lemmatizerQueryOptions {
+var queryOptions = new TextLemmatizerQueryOptions {
   text = "The cats ran from door to door"
 };
 ```
@@ -100,7 +100,8 @@ if(response.error != null) {
       "ran": 1,
       "door": 2
     }
-  }
+  },
+  "code": 200
 }
 ```
 
