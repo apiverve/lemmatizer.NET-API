@@ -4,43 +4,46 @@ using Newtonsoft.Json;
 
 namespace APIVerve
 {
-public class lemmas
-{
-    [JsonProperty("cat")]
-    public int cat { get; set; }
+    /// <summary>
+    /// Lemmas data
+    /// </summary>
+    public class Lemmas
+    {
+        [JsonProperty("cat")]
+        public int Cat { get; set; }
 
-    [JsonProperty("ran")]
-    public int ran { get; set; }
+        [JsonProperty("ran")]
+        public int Ran { get; set; }
 
-    [JsonProperty("door")]
-    public int door { get; set; }
+        [JsonProperty("door")]
+        public int Door { get; set; }
 
-}
+    }
+    /// <summary>
+    /// Data data
+    /// </summary>
+    public class Data
+    {
+        [JsonProperty("found")]
+        public int Found { get; set; }
 
-public class data
-{
-    [JsonProperty("found")]
-    public int found { get; set; }
+        [JsonProperty("lemmas")]
+        public Lemmas Lemmas { get; set; }
 
-    [JsonProperty("lemmas")]
-    public lemmas lemmas { get; set; }
+    }
+    /// <summary>
+    /// API Response object
+    /// </summary>
+    public class ResponseObj
+    {
+        [JsonProperty("status")]
+        public string Status { get; set; }
 
-}
+        [JsonProperty("error")]
+        public object Error { get; set; }
 
-public class ResponseObj
-{
-    [JsonProperty("status")]
-    public string status { get; set; }
+        [JsonProperty("data")]
+        public Data Data { get; set; }
 
-    [JsonProperty("error")]
-    public object error { get; set; }
-
-    [JsonProperty("data")]
-    public data data { get; set; }
-
-    [JsonProperty("code")]
-    public int code { get; set; }
-
-}
-
+    }
 }
